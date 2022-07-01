@@ -28,6 +28,7 @@ jobs:
       - name: Mike Deploy 3.2.0
         run: |
           # mike delete 3.2.0 -p
+          mike list
           mike deploy 3.2.0 -p --rebase
           mike list
 
